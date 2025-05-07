@@ -1,0 +1,259 @@
+--- INICIO DEL LOG: 2025-05-07 15:37:45 ---
+
+[15:37:45] [INFO] --- Iniciando Script de Generación de CSVs por Región e Indicador ---
+[15:37:45] [INFO] Cargando archivo de programas: ./files/programas_benchmarking.xlsx
+[15:37:45] [INFO] Archivo de programas cargado y preparado. Columnas: ['UNNAMED_0', 'INSTITUCION_EDUCACION_SUPERIOR', 'NOMBRE_DEL_PROGRAMA', 'SECTOR', 'CODIGO_SNIES_PROGRAMA', 'CODIGO_ANTERIOR_ICFES', 'RECONOCIMIENTO_DEL_MINISTERIO', 'VIGENCIA_ANOS', 'CINE_F_2013_AC_CAMPO_DETALLADO', 'MODALIDAD', 'NUMERO_CREDITOS', 'NUMERO_PERIODOS_DE_DURACION', 'PERIODICIDAD', 'SE_OFRECE_POR_CICLOS_PROPEDEUT', 'PERIODICIDAD_ADMISIONES', 'DEPARTAMENTO_OFERTA_PROGRAMA', 'MUNICIPIO_OFERTA_PROGRAMA', 'REGION']
+[15:37:45] [INFO] Regiones detectadas: ['Región Andina', 'Región Caribe', 'Región Orinoquía', 'Región Pacífico']
+[15:37:45] [INFO] Años con datos CSV detectados: ['2018', '2019', '2020', '2021', '2022', '2023']
+[15:37:45] [INFO] --- Procesando Indicador: INSCRITOS ---
+[15:37:45] [INFO]   Procesando Región: Región Andina (Archivo: REGION_ANDINA)
+[15:37:45] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/INSCRITOS.csv
+[15:37:45] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRIPCIONES_2018 para ./files/csv_convertidos/2018/INSCRITOS.csv
+[15:37:45] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/INSCRITOS.csv
+[15:37:46] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRITOS para ./files/csv_convertidos/2019/INSCRITOS.csv
+[15:37:46] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/INSCRITOS.csv
+[15:37:46] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRITOS para ./files/csv_convertidos/2020/INSCRITOS.csv
+[15:37:46] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/INSCRITOS.csv
+[15:37:46] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRITOS para ./files/csv_convertidos/2021/INSCRITOS.csv
+[15:37:46] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/INSCRITOS.csv
+[15:37:47] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRITOS para ./files/csv_convertidos/2022/INSCRITOS.csv
+[15:37:47] [INFO]     Procesando archivo de año 2023: ./files/csv_convertidos/2023/INSCRITOS.csv
+[15:37:47] [SUCCESS]     Archivo guardado: ./resultados/por_region/REGION_ANDINA_INSCRITOS.csv
+[15:37:47] [INFO]   Procesando Región: Región Caribe (Archivo: REGION_CARIBE)
+[15:37:47] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/INSCRITOS.csv
+[15:37:48] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRIPCIONES_2018 para ./files/csv_convertidos/2018/INSCRITOS.csv
+[15:37:48] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/INSCRITOS.csv
+[15:37:48] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRITOS para ./files/csv_convertidos/2019/INSCRITOS.csv
+[15:37:48] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/INSCRITOS.csv
+[15:37:48] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRITOS para ./files/csv_convertidos/2020/INSCRITOS.csv
+[15:37:48] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/INSCRITOS.csv
+[15:37:49] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRITOS para ./files/csv_convertidos/2021/INSCRITOS.csv
+[15:37:49] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/INSCRITOS.csv
+[15:37:49] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRITOS para ./files/csv_convertidos/2022/INSCRITOS.csv
+[15:37:49] [INFO]     Procesando archivo de año 2023: ./files/csv_convertidos/2023/INSCRITOS.csv
+[15:37:50] [SUCCESS]     Archivo guardado: ./resultados/por_region/REGION_CARIBE_INSCRITOS.csv
+[15:37:50] [INFO]   Procesando Región: Región Orinoquía (Archivo: REGION_ORINOQUIA)
+[15:37:50] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/INSCRITOS.csv
+[15:37:50] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/INSCRITOS.csv
+[15:37:50] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRITOS para ./files/csv_convertidos/2019/INSCRITOS.csv
+[15:37:50] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/INSCRITOS.csv
+[15:37:51] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/INSCRITOS.csv
+[15:37:51] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRITOS para ./files/csv_convertidos/2021/INSCRITOS.csv
+[15:37:51] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/INSCRITOS.csv
+[15:37:51] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRITOS para ./files/csv_convertidos/2022/INSCRITOS.csv
+[15:37:51] [INFO]     Procesando archivo de año 2023: ./files/csv_convertidos/2023/INSCRITOS.csv
+[15:37:52] [SUCCESS]     Archivo guardado: ./resultados/por_region/REGION_ORINOQUIA_INSCRITOS.csv
+[15:37:52] [INFO]   Procesando Región: Región Pacífico (Archivo: REGION_PACIFICO)
+[15:37:52] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/INSCRITOS.csv
+[15:37:52] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRIPCIONES_2018 para ./files/csv_convertidos/2018/INSCRITOS.csv
+[15:37:52] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/INSCRITOS.csv
+[15:37:52] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRITOS para ./files/csv_convertidos/2019/INSCRITOS.csv
+[15:37:53] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/INSCRITOS.csv
+[15:37:53] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRITOS para ./files/csv_convertidos/2020/INSCRITOS.csv
+[15:37:53] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/INSCRITOS.csv
+[15:37:53] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRITOS para ./files/csv_convertidos/2021/INSCRITOS.csv
+[15:37:53] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/INSCRITOS.csv
+[15:37:54] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRITOS para ./files/csv_convertidos/2022/INSCRITOS.csv
+[15:37:54] [INFO]     Procesando archivo de año 2023: ./files/csv_convertidos/2023/INSCRITOS.csv
+[15:37:54] [SUCCESS]     Archivo guardado: ./resultados/por_region/REGION_PACIFICO_INSCRITOS.csv
+[15:37:54] [INFO] --- Procesando Indicador: ADMITIDOS ---
+[15:37:54] [INFO]   Procesando Región: Región Andina (Archivo: REGION_ANDINA)
+[15:37:54] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/ADMITIDOS.csv
+[15:37:54] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en ADMISIONES_2018 para ./files/csv_convertidos/2018/ADMITIDOS.csv
+[15:37:55] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/ADMITIDOS.csv
+[15:37:55] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en ADMITIDOS para ./files/csv_convertidos/2019/ADMITIDOS.csv
+[15:37:55] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/ADMITIDOS.csv
+[15:37:55] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en ADMITIDOS para ./files/csv_convertidos/2020/ADMITIDOS.csv
+[15:37:56] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/ADMITIDOS.csv
+[15:37:56] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en ADMITIDOS para ./files/csv_convertidos/2021/ADMITIDOS.csv
+[15:37:56] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/ADMITIDOS.csv
+[15:37:56] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en ADMITIDOS para ./files/csv_convertidos/2022/ADMITIDOS.csv
+[15:37:56] [INFO]     Procesando archivo de año 2023: ./files/csv_convertidos/2023/ADMITIDOS.csv
+[15:37:57] [SUCCESS]     Archivo guardado: ./resultados/por_region/REGION_ANDINA_ADMITIDOS.csv
+[15:37:57] [INFO]   Procesando Región: Región Caribe (Archivo: REGION_CARIBE)
+[15:37:57] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/ADMITIDOS.csv
+[15:37:57] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en ADMISIONES_2018 para ./files/csv_convertidos/2018/ADMITIDOS.csv
+[15:37:57] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/ADMITIDOS.csv
+[15:37:57] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en ADMITIDOS para ./files/csv_convertidos/2019/ADMITIDOS.csv
+[15:37:57] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/ADMITIDOS.csv
+[15:37:58] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en ADMITIDOS para ./files/csv_convertidos/2020/ADMITIDOS.csv
+[15:37:58] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/ADMITIDOS.csv
+[15:37:58] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en ADMITIDOS para ./files/csv_convertidos/2021/ADMITIDOS.csv
+[15:37:58] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/ADMITIDOS.csv
+[15:37:58] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en ADMITIDOS para ./files/csv_convertidos/2022/ADMITIDOS.csv
+[15:37:59] [INFO]     Procesando archivo de año 2023: ./files/csv_convertidos/2023/ADMITIDOS.csv
+[15:37:59] [SUCCESS]     Archivo guardado: ./resultados/por_region/REGION_CARIBE_ADMITIDOS.csv
+[15:37:59] [INFO]   Procesando Región: Región Orinoquía (Archivo: REGION_ORINOQUIA)
+[15:37:59] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/ADMITIDOS.csv
+[15:37:59] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/ADMITIDOS.csv
+[15:38:00] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en ADMITIDOS para ./files/csv_convertidos/2019/ADMITIDOS.csv
+[15:38:00] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/ADMITIDOS.csv
+[15:38:00] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/ADMITIDOS.csv
+[15:38:00] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en ADMITIDOS para ./files/csv_convertidos/2021/ADMITIDOS.csv
+[15:38:00] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/ADMITIDOS.csv
+[15:38:01] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en ADMITIDOS para ./files/csv_convertidos/2022/ADMITIDOS.csv
+[15:38:01] [INFO]     Procesando archivo de año 2023: ./files/csv_convertidos/2023/ADMITIDOS.csv
+[15:38:01] [SUCCESS]     Archivo guardado: ./resultados/por_region/REGION_ORINOQUIA_ADMITIDOS.csv
+[15:38:01] [INFO]   Procesando Región: Región Pacífico (Archivo: REGION_PACIFICO)
+[15:38:01] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/ADMITIDOS.csv
+[15:38:02] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en ADMISIONES_2018 para ./files/csv_convertidos/2018/ADMITIDOS.csv
+[15:38:02] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/ADMITIDOS.csv
+[15:38:02] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en ADMITIDOS para ./files/csv_convertidos/2019/ADMITIDOS.csv
+[15:38:02] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/ADMITIDOS.csv
+[15:38:02] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en ADMITIDOS para ./files/csv_convertidos/2020/ADMITIDOS.csv
+[15:38:02] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/ADMITIDOS.csv
+[15:38:03] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en ADMITIDOS para ./files/csv_convertidos/2021/ADMITIDOS.csv
+[15:38:03] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/ADMITIDOS.csv
+[15:38:03] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en ADMITIDOS para ./files/csv_convertidos/2022/ADMITIDOS.csv
+[15:38:03] [INFO]     Procesando archivo de año 2023: ./files/csv_convertidos/2023/ADMITIDOS.csv
+[15:38:04] [SUCCESS]     Archivo guardado: ./resultados/por_region/REGION_PACIFICO_ADMITIDOS.csv
+[15:38:04] [INFO] --- Procesando Indicador: MATRICULADOS ---
+[15:38:04] [INFO]   Procesando Región: Región Andina (Archivo: REGION_ANDINA)
+[15:38:04] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/MATRICULADOS.csv
+[15:38:04] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en MATRICULADOS_2018 para ./files/csv_convertidos/2018/MATRICULADOS.csv
+[15:38:04] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/MATRICULADOS.csv
+[15:38:05] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en MATRICULADOS para ./files/csv_convertidos/2019/MATRICULADOS.csv
+[15:38:05] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/MATRICULADOS.csv
+[15:38:05] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en MATRICULADOS para ./files/csv_convertidos/2020/MATRICULADOS.csv
+[15:38:05] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/MATRICULADOS.csv
+[15:38:06] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en MATRICULADOS para ./files/csv_convertidos/2021/MATRICULADOS.csv
+[15:38:06] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/MATRICULADOS.csv
+[15:38:06] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en MATRICULADOS para ./files/csv_convertidos/2022/MATRICULADOS.csv
+[15:38:06] [INFO]     Procesando archivo de año 2023: ./files/csv_convertidos/2023/MATRICULADOS.csv
+[15:38:07] [SUCCESS]     Archivo guardado: ./resultados/por_region/REGION_ANDINA_MATRICULADOS.csv
+[15:38:07] [INFO]   Procesando Región: Región Caribe (Archivo: REGION_CARIBE)
+[15:38:07] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/MATRICULADOS.csv
+[15:38:07] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en MATRICULADOS_2018 para ./files/csv_convertidos/2018/MATRICULADOS.csv
+[15:38:07] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/MATRICULADOS.csv
+[15:38:08] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en MATRICULADOS para ./files/csv_convertidos/2019/MATRICULADOS.csv
+[15:38:08] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/MATRICULADOS.csv
+[15:38:08] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en MATRICULADOS para ./files/csv_convertidos/2020/MATRICULADOS.csv
+[15:38:08] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/MATRICULADOS.csv
+[15:38:09] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en MATRICULADOS para ./files/csv_convertidos/2021/MATRICULADOS.csv
+[15:38:09] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/MATRICULADOS.csv
+[15:38:09] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en MATRICULADOS para ./files/csv_convertidos/2022/MATRICULADOS.csv
+[15:38:09] [INFO]     Procesando archivo de año 2023: ./files/csv_convertidos/2023/MATRICULADOS.csv
+[15:38:10] [SUCCESS]     Archivo guardado: ./resultados/por_region/REGION_CARIBE_MATRICULADOS.csv
+[15:38:10] [INFO]   Procesando Región: Región Orinoquía (Archivo: REGION_ORINOQUIA)
+[15:38:10] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/MATRICULADOS.csv
+[15:38:10] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/MATRICULADOS.csv
+[15:38:11] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en MATRICULADOS para ./files/csv_convertidos/2019/MATRICULADOS.csv
+[15:38:11] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/MATRICULADOS.csv
+[15:38:11] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en MATRICULADOS para ./files/csv_convertidos/2020/MATRICULADOS.csv
+[15:38:11] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/MATRICULADOS.csv
+[15:38:12] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en MATRICULADOS para ./files/csv_convertidos/2021/MATRICULADOS.csv
+[15:38:12] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/MATRICULADOS.csv
+[15:38:12] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en MATRICULADOS para ./files/csv_convertidos/2022/MATRICULADOS.csv
+[15:38:13] [INFO]     Procesando archivo de año 2023: ./files/csv_convertidos/2023/MATRICULADOS.csv
+[15:38:13] [SUCCESS]     Archivo guardado: ./resultados/por_region/REGION_ORINOQUIA_MATRICULADOS.csv
+[15:38:13] [INFO]   Procesando Región: Región Pacífico (Archivo: REGION_PACIFICO)
+[15:38:13] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/MATRICULADOS.csv
+[15:38:13] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en MATRICULADOS_2018 para ./files/csv_convertidos/2018/MATRICULADOS.csv
+[15:38:14] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/MATRICULADOS.csv
+[15:38:14] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en MATRICULADOS para ./files/csv_convertidos/2019/MATRICULADOS.csv
+[15:38:14] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/MATRICULADOS.csv
+[15:38:14] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en MATRICULADOS para ./files/csv_convertidos/2020/MATRICULADOS.csv
+[15:38:14] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/MATRICULADOS.csv
+[15:38:15] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en MATRICULADOS para ./files/csv_convertidos/2021/MATRICULADOS.csv
+[15:38:15] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/MATRICULADOS.csv
+[15:38:15] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en MATRICULADOS para ./files/csv_convertidos/2022/MATRICULADOS.csv
+[15:38:15] [INFO]     Procesando archivo de año 2023: ./files/csv_convertidos/2023/MATRICULADOS.csv
+[15:38:16] [SUCCESS]     Archivo guardado: ./resultados/por_region/REGION_PACIFICO_MATRICULADOS.csv
+[15:38:16] [INFO] --- Procesando Indicador: PRIMER_CURSO ---
+[15:38:16] [INFO]   Procesando Región: Región Andina (Archivo: REGION_ANDINA)
+[15:38:16] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/PRIMER_CURSO.csv
+[15:38:16] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en PRIMER_CURSO_2018 para ./files/csv_convertidos/2018/PRIMER_CURSO.csv
+[15:38:16] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/PRIMER_CURSO.csv
+[15:38:17] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en PRIMER_CURSO_2019 para ./files/csv_convertidos/2019/PRIMER_CURSO.csv
+[15:38:17] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/PRIMER_CURSO.csv
+[15:38:17] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en PRIMER_CURSO para ./files/csv_convertidos/2020/PRIMER_CURSO.csv
+[15:38:17] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/PRIMER_CURSO.csv
+[15:38:18] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en PRIMER_CURSO para ./files/csv_convertidos/2021/PRIMER_CURSO.csv
+[15:38:18] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/PRIMER_CURSO.csv
+[15:38:18] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en PRIMER_CURSO para ./files/csv_convertidos/2022/PRIMER_CURSO.csv
+[15:38:19] [SUCCESS]     Archivo guardado: ./resultados/por_region/REGION_ANDINA_PRIMER_CURSO.csv
+[15:38:19] [INFO]   Procesando Región: Región Caribe (Archivo: REGION_CARIBE)
+[15:38:19] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/PRIMER_CURSO.csv
+[15:38:19] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en PRIMER_CURSO_2018 para ./files/csv_convertidos/2018/PRIMER_CURSO.csv
+[15:38:19] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/PRIMER_CURSO.csv
+[15:38:19] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en PRIMER_CURSO_2019 para ./files/csv_convertidos/2019/PRIMER_CURSO.csv
+[15:38:20] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/PRIMER_CURSO.csv
+[15:38:20] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en PRIMER_CURSO para ./files/csv_convertidos/2020/PRIMER_CURSO.csv
+[15:38:20] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/PRIMER_CURSO.csv
+[15:38:21] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en PRIMER_CURSO para ./files/csv_convertidos/2021/PRIMER_CURSO.csv
+[15:38:21] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/PRIMER_CURSO.csv
+[15:38:21] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en PRIMER_CURSO para ./files/csv_convertidos/2022/PRIMER_CURSO.csv
+[15:38:21] [SUCCESS]     Archivo guardado: ./resultados/por_region/REGION_CARIBE_PRIMER_CURSO.csv
+[15:38:21] [INFO]   Procesando Región: Región Orinoquía (Archivo: REGION_ORINOQUIA)
+[15:38:21] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/PRIMER_CURSO.csv
+[15:38:21] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/PRIMER_CURSO.csv
+[15:38:22] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en PRIMER_CURSO_2019 para ./files/csv_convertidos/2019/PRIMER_CURSO.csv
+[15:38:22] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/PRIMER_CURSO.csv
+[15:38:22] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/PRIMER_CURSO.csv
+[15:38:22] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en PRIMER_CURSO para ./files/csv_convertidos/2021/PRIMER_CURSO.csv
+[15:38:22] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/PRIMER_CURSO.csv
+[15:38:23] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en PRIMER_CURSO para ./files/csv_convertidos/2022/PRIMER_CURSO.csv
+[15:38:23] [SUCCESS]     Archivo guardado: ./resultados/por_region/REGION_ORINOQUIA_PRIMER_CURSO.csv
+[15:38:23] [INFO]   Procesando Región: Región Pacífico (Archivo: REGION_PACIFICO)
+[15:38:23] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/PRIMER_CURSO.csv
+[15:38:23] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en PRIMER_CURSO_2018 para ./files/csv_convertidos/2018/PRIMER_CURSO.csv
+[15:38:23] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/PRIMER_CURSO.csv
+[15:38:23] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en PRIMER_CURSO_2019 para ./files/csv_convertidos/2019/PRIMER_CURSO.csv
+[15:38:23] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/PRIMER_CURSO.csv
+[15:38:24] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en PRIMER_CURSO para ./files/csv_convertidos/2020/PRIMER_CURSO.csv
+[15:38:24] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/PRIMER_CURSO.csv
+[15:38:24] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en PRIMER_CURSO para ./files/csv_convertidos/2021/PRIMER_CURSO.csv
+[15:38:24] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/PRIMER_CURSO.csv
+[15:38:24] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en PRIMER_CURSO para ./files/csv_convertidos/2022/PRIMER_CURSO.csv
+[15:38:25] [SUCCESS]     Archivo guardado: ./resultados/por_region/REGION_PACIFICO_PRIMER_CURSO.csv
+[15:38:25] [INFO] --- Procesando Indicador: GRADUADOS ---
+[15:38:25] [INFO]   Procesando Región: Región Andina (Archivo: REGION_ANDINA)
+[15:38:25] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/GRADUADOS.csv
+[15:38:25] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en GRADUADOS para ./files/csv_convertidos/2018/GRADUADOS.csv
+[15:38:25] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/GRADUADOS.csv
+[15:38:25] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en GRADUADOS para ./files/csv_convertidos/2019/GRADUADOS.csv
+[15:38:25] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/GRADUADOS.csv
+[15:38:26] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en GRADUADOS para ./files/csv_convertidos/2020/GRADUADOS.csv
+[15:38:26] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/GRADUADOS.csv
+[15:38:26] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en GRADUADOS para ./files/csv_convertidos/2021/GRADUADOS.csv
+[15:38:26] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/GRADUADOS.csv
+[15:38:26] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en GRADUADOS para ./files/csv_convertidos/2022/GRADUADOS.csv
+[15:38:27] [INFO]     Procesando archivo de año 2023: ./files/csv_convertidos/2023/GRADUADOS.csv
+[15:38:27] [SUCCESS]     Archivo guardado: ./resultados/por_region/REGION_ANDINA_GRADUADOS.csv
+[15:38:27] [INFO]   Procesando Región: Región Caribe (Archivo: REGION_CARIBE)
+[15:38:27] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/GRADUADOS.csv
+[15:38:27] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en GRADUADOS para ./files/csv_convertidos/2018/GRADUADOS.csv
+[15:38:27] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/GRADUADOS.csv
+[15:38:27] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en GRADUADOS para ./files/csv_convertidos/2019/GRADUADOS.csv
+[15:38:28] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/GRADUADOS.csv
+[15:38:28] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en GRADUADOS para ./files/csv_convertidos/2020/GRADUADOS.csv
+[15:38:28] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/GRADUADOS.csv
+[15:38:28] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en GRADUADOS para ./files/csv_convertidos/2021/GRADUADOS.csv
+[15:38:28] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/GRADUADOS.csv
+[15:38:29] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en GRADUADOS para ./files/csv_convertidos/2022/GRADUADOS.csv
+[15:38:29] [INFO]     Procesando archivo de año 2023: ./files/csv_convertidos/2023/GRADUADOS.csv
+[15:38:29] [SUCCESS]     Archivo guardado: ./resultados/por_region/REGION_CARIBE_GRADUADOS.csv
+[15:38:29] [INFO]   Procesando Región: Región Orinoquía (Archivo: REGION_ORINOQUIA)
+[15:38:29] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/GRADUADOS.csv
+[15:38:29] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/GRADUADOS.csv
+[15:38:30] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/GRADUADOS.csv
+[15:38:30] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/GRADUADOS.csv
+[15:38:30] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en GRADUADOS para ./files/csv_convertidos/2021/GRADUADOS.csv
+[15:38:30] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/GRADUADOS.csv
+[15:38:31] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en GRADUADOS para ./files/csv_convertidos/2022/GRADUADOS.csv
+[15:38:31] [INFO]     Procesando archivo de año 2023: ./files/csv_convertidos/2023/GRADUADOS.csv
+[15:38:31] [SUCCESS]     Archivo guardado: ./resultados/por_region/REGION_ORINOQUIA_GRADUADOS.csv
+[15:38:31] [INFO]   Procesando Región: Región Pacífico (Archivo: REGION_PACIFICO)
+[15:38:31] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/GRADUADOS.csv
+[15:38:31] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en GRADUADOS para ./files/csv_convertidos/2018/GRADUADOS.csv
+[15:38:32] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/GRADUADOS.csv
+[15:38:32] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en GRADUADOS para ./files/csv_convertidos/2019/GRADUADOS.csv
+[15:38:32] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/GRADUADOS.csv
+[15:38:32] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en GRADUADOS para ./files/csv_convertidos/2020/GRADUADOS.csv
+[15:38:32] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/GRADUADOS.csv
+[15:38:32] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en GRADUADOS para ./files/csv_convertidos/2021/GRADUADOS.csv
+[15:38:33] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/GRADUADOS.csv
+[15:38:33] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en GRADUADOS para ./files/csv_convertidos/2022/GRADUADOS.csv
+[15:38:33] [INFO]     Procesando archivo de año 2023: ./files/csv_convertidos/2023/GRADUADOS.csv
+[15:38:33] [SUCCESS]     Archivo guardado: ./resultados/por_region/REGION_PACIFICO_GRADUADOS.csv
+[15:38:33] [INFO] --- Script de Generación de CSVs por Región e Indicador Finalizado ---

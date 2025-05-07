@@ -1,0 +1,20 @@
+--- INICIO DEL LOG: 2025-05-07 15:36:06 ---
+
+[15:36:06] [INFO] --- Iniciando Script de Generación de CSVs por Región e Indicador ---
+[15:36:06] [INFO] Cargando archivo de programas: ./files/programas_benchmarking.xlsx
+[15:36:06] [INFO] Archivo de programas cargado y preparado. Columnas: ['UNNAMED_0', 'INSTITUCION_EDUCACION_SUPERIOR', 'NOMBRE_DEL_PROGRAMA', 'SECTOR', 'CODIGO_SNIES_PROGRAMA', 'CODIGO_ANTERIOR_ICFES', 'RECONOCIMIENTO_DEL_MINISTERIO', 'VIGENCIA_ANOS', 'CINE_F_2013_AC_CAMPO_DETALLADO', 'MODALIDAD', 'NUMERO_CREDITOS', 'NUMERO_PERIODOS_DE_DURACION', 'PERIODICIDAD', 'SE_OFRECE_POR_CICLOS_PROPEDEUT', 'PERIODICIDAD_ADMISIONES', 'DEPARTAMENTO_OFERTA_PROGRAMA', 'MUNICIPIO_OFERTA_PROGRAMA', 'REGION']
+[15:36:06] [INFO] Regiones detectadas: ['Región Andina', 'Región Caribe', 'Región Orinoquía', 'Región Pacífico']
+[15:36:06] [INFO] Años con datos CSV detectados: ['2018', '2019', '2020', '2021', '2022', '2023']
+[15:36:06] [INFO] --- Procesando Indicador: INSCRITOS ---
+[15:36:06] [INFO]   Procesando Región: Región Andina (Archivo: REGION_ANDINA)
+[15:36:06] [INFO]     Procesando archivo de año 2018: ./files/csv_convertidos/2018/INSCRITOS.csv
+[15:36:06] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRIPCIONES_2018 para ./files/csv_convertidos/2018/INSCRITOS.csv
+[15:36:06] [INFO]     Procesando archivo de año 2019: ./files/csv_convertidos/2019/INSCRITOS.csv
+[15:36:07] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRITOS para ./files/csv_convertidos/2019/INSCRITOS.csv
+[15:36:07] [INFO]     Procesando archivo de año 2020: ./files/csv_convertidos/2020/INSCRITOS.csv
+[15:36:07] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRITOS para ./files/csv_convertidos/2020/INSCRITOS.csv
+[15:36:07] [INFO]     Procesando archivo de año 2021: ./files/csv_convertidos/2021/INSCRITOS.csv
+[15:36:08] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRITOS para ./files/csv_convertidos/2021/INSCRITOS.csv
+[15:36:08] [INFO]     Procesando archivo de año 2022: ./files/csv_convertidos/2022/INSCRITOS.csv
+[15:36:08] [INFO] Construyendo periodos desde ANO, SEMESTRE, y valor en INSCRITOS para ./files/csv_convertidos/2022/INSCRITOS.csv
+[15:36:08] [INFO]     Procesando archivo de año 2023: ./files/csv_convertidos/2023/INSCRITOS.csv

@@ -1,0 +1,115 @@
+--- INICIO DEL LOG EXCEL: 2025-05-07 16:08:23 ---
+
+[16:08:23] [INFO] --- Iniciando Script de Consolidación a Excel con Formato ---
+[16:08:23] [INFO] Cargando archivo de programas: ./files/programas_benchmarking.xlsx
+[16:08:23] [INFO] Archivo de programas cargado.
+[16:08:23] [INFO] Regiones a procesar: ['Región Andina', 'Región Caribe', 'Región Orinoquía', 'Región Pacífico']
+[16:08:23] [INFO] Años con datos CSV detectados: ['2018', '2019', '2020', '2021', '2022', '2023']
+[16:08:23] [INFO] Creando archivo Excel: ./resultados/Consolidado_Indicadores_por_Region.xlsx
+[16:08:23] [INFO] --- Procesando Indicador para Hoja: INSCRITOS ---
+[16:08:23] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2018/INSCRITOS.csv
+[16:08:23] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en INSCRIPCIONES_2018
+[16:08:31] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2019/INSCRITOS.csv
+[16:08:32] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en INSCRITOS
+[16:08:39] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2020/INSCRITOS.csv
+[16:08:39] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en INSCRITOS
+[16:08:43] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2021/INSCRITOS.csv
+[16:08:44] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en INSCRITOS
+[16:08:48] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2022/INSCRITOS.csv
+[16:08:49] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en INSCRITOS
+[16:08:53] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2023/INSCRITOS.csv
+[16:08:53] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en INSCRITOS
+[16:08:58] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:08:58] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:08:58] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:08:58] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:08:58] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:08:58] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:08:58] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:08:58] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:08:58] [INFO] Escribiendo hoja: 'INSCRITOS'
+[16:08:58] [INFO] --- Procesando Indicador para Hoja: ADMITIDOS ---
+[16:08:58] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2018/ADMITIDOS.csv
+[16:08:59] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en ADMISIONES_2018
+[16:09:02] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2019/ADMITIDOS.csv
+[16:09:03] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en ADMITIDOS
+[16:09:06] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2020/ADMITIDOS.csv
+[16:09:07] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en ADMITIDOS
+[16:09:11] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2021/ADMITIDOS.csv
+[16:09:11] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en ADMITIDOS
+[16:09:16] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2022/ADMITIDOS.csv
+[16:09:16] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en ADMITIDOS
+[16:09:20] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2023/ADMITIDOS.csv
+[16:09:20] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en ADMITIDOS
+[16:09:25] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:09:25] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:09:25] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:09:25] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:09:25] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:09:25] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:09:25] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:09:25] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:09:25] [INFO] Escribiendo hoja: 'ADMITIDOS'
+[16:09:25] [INFO] --- Procesando Indicador para Hoja: MATRICULADOS ---
+[16:09:25] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2018/MATRICULADOS.csv
+[16:09:26] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en MATRICULADOS_2018
+[16:09:32] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2019/MATRICULADOS.csv
+[16:09:32] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en MATRICULADOS
+[16:09:38] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2020/MATRICULADOS.csv
+[16:09:38] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en MATRICULADOS
+[16:09:44] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2021/MATRICULADOS.csv
+[16:09:44] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en MATRICULADOS
+[16:09:49] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2022/MATRICULADOS.csv
+[16:09:50] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en MATRICULADOS
+[16:09:55] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2023/MATRICULADOS.csv
+[16:09:56] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en MATRICULADOS
+[16:10:02] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:10:02] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:10:02] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:10:02] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:10:02] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:10:02] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:10:02] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:10:02] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:10:02] [INFO] Escribiendo hoja: 'MATRICULADOS'
+[16:10:02] [INFO] --- Procesando Indicador para Hoja: PRIMER_CURSO ---
+[16:10:02] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2018/PRIMER_CURSO.csv
+[16:10:02] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en PRIMER_CURSO_2018
+[16:10:05] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2019/PRIMER_CURSO.csv
+[16:10:06] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en PRIMER_CURSO_2019
+[16:10:09] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2020/PRIMER_CURSO.csv
+[16:10:09] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en PRIMER_CURSO
+[16:10:13] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2021/PRIMER_CURSO.csv
+[16:10:13] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en PRIMER_CURSO
+[16:10:16] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:10:17] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:10:18] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:10:18] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:10:18] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2022/PRIMER_CURSO.csv
+[16:10:18] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en PRIMER_CURSO
+[16:10:23] [DEBUG] Archivo no encontrado: ./files/csv_convertidos/2023/PRIMER_CURSO.csv
+[16:10:23] [INFO] Escribiendo hoja: 'PRIMER_CURSO'
+[16:10:23] [INFO] --- Procesando Indicador para Hoja: GRADUADOS ---
+[16:10:23] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2018/GRADUADOS.csv
+[16:10:23] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en GRADUADOS
+[16:10:26] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2019/GRADUADOS.csv
+[16:10:26] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en GRADUADOS
+[16:10:29] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2020/GRADUADOS.csv
+[16:10:30] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en GRADUADOS
+[16:10:33] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2021/GRADUADOS.csv
+[16:10:34] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en GRADUADOS
+[16:10:36] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2022/GRADUADOS.csv
+[16:10:36] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en GRADUADOS
+[16:10:39] [DEBUG] Leyendo indicador: ./files/csv_convertidos/2023/GRADUADOS.csv
+[16:10:39] [DEBUG] Construyendo periodos desde ANO, SEMESTRE, valor en GRADUADOS
+[16:10:42] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:10:42] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:10:42] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:10:42] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:10:42] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:10:42] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:10:42] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:10:42] [WARNING] Error procesando fila periodo: cannot convert float NaN to integer
+[16:10:42] [INFO] Escribiendo hoja: 'GRADUADOS'
+[16:10:42] [SUCCESS] Archivo Excel './resultados/Consolidado_Indicadores_por_Region.xlsx' guardado exitosamente.
+[16:10:42] [INFO] --- Script de Consolidación a Excel Finalizado ---
