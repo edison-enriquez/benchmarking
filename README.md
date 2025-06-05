@@ -119,7 +119,7 @@ CODIGO_SNIES_PROGRAMA, INSTITUCION_EDUCACION_SUPERIOR, NOMBRE_DEL_PROGRAMA, REGI
 
 # 📚 Sistema de Procesamiento de Indicadores Educativos por Región
 
-Este proyecto automatiza la consolidación de indicadores educativos como **inscritos**, **admitidos**, **matriculados**, **primer curso** y **graduados**, generando informes CSV por región y un archivo Excel consolidado con formato profesional.
+Este proyecto automatiza la consolidación de indicadores educativos como **inscritos**, **admitidos**, **matriculados**, **primer curso** y **graduados**, generando informes CSV por región y un archivo Excel consolidado.
 
 ## 🧩 Componentes principales
 
