@@ -1,6 +1,6 @@
 # Análisis de Programas Activos por Región (2018-2024)
 
-**Fecha de análisis:** 2025-08-20 18:48:32
+**Fecha de análisis:** 2025-08-20 18:53:14
 **Fuente:** Consolidado_Programas_ACTIVOS.xlsx
 
 ## 📊 Resumen Ejecutivo
@@ -314,5 +314,5 @@ Se han generado las siguientes gráficas en la carpeta `analisis_distribucion/gr
 
 ---
 
-*Reporte generado automáticamente el 2025-08-20 18:48:32*
+*Reporte generado automáticamente el 2025-08-20 18:53:14*
 *Basado en el análisis de 46 programas activos de 29 instituciones*
