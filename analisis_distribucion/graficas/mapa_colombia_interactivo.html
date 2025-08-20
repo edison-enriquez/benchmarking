@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4fda13925415a74326b3a2853c4bdb99 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+    <div style="position: fixed; 
+                bottom: 50px; left: 50px; width: 300px; height: 200px; 
+                background-color: white; z-index:9999; font-size:14px;
+                border:2px solid grey; padding: 10px">
+    <p><b>Regiones de Colombia</b></p>
+    
+            <p><i class="fa fa-circle" style="color:#E74C3C"></i> 
+            Región Bogotá: 10 instituciones, 11 programas</p>
+            
+            <p><i class="fa fa-circle" style="color:#3498DB"></i> 
+            Región Centro Occidente: 7 instituciones, 11 programas</p>
+            
+            <p><i class="fa fa-circle" style="color:#2ECC71"></i> 
+            Región Occidente: 5 instituciones, 12 programas</p>
+            
+            <p><i class="fa fa-circle" style="color:#F39C12"></i> 
+            Región Centro Oriente: 3 instituciones, 5 programas</p>
+            
+            <p><i class="fa fa-circle" style="color:#9B59B6"></i> 
+            Región Norte: 3 instituciones, 5 programas</p>
+            
+            <p><i class="fa fa-circle" style="color:#E67E22"></i> 
+            Región Sur Oriente: 1 instituciones, 2 programas</p>
+            </div>
+    
+            <div class="folium-map" id="map_4fda13925415a74326b3a2853c4bdb99" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4fda13925415a74326b3a2853c4bdb99 = L.map(
+                "map_4fda13925415a74326b3a2853c4bdb99",
+                {
+                    center: [4.5709, -74.2973],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_68bae144322d9a6a1ff778e0c43f9a69 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_68bae144322d9a6a1ff778e0c43f9a69.addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+            var circle_marker_100061ff1894eb731ff4660f11a12cb7 = L.circleMarker(
+                [4.711, -74.0721],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_0f0568610b02df6a7b68b7f144fdf6bb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0807e9fed50bb25fd275dd5576efbdb6 = $(`<div id="html_0807e9fed50bb25fd275dd5576efbdb6" style="width: 100.0%; height: 100.0%;">                     <b>Bogotá, D.C.</b><br>                     Región: Región Bogotá<br>                     Instituciones en región: 10<br>                     Programas en región: 11<br>                     Estudiantes totales: 9,246                     </div>`)[0];
+                popup_0f0568610b02df6a7b68b7f144fdf6bb.setContent(html_0807e9fed50bb25fd275dd5576efbdb6);
+            
+        
+
+        circle_marker_100061ff1894eb731ff4660f11a12cb7.bindPopup(popup_0f0568610b02df6a7b68b7f144fdf6bb)
+        ;
+
+        
+    
+    
+            var circle_marker_9a9ffd32b2719936d7031f3a320e9b5d = L.circleMarker(
+                [5.0703, -75.5138],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498DB", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_75a863a2b6a09724626c5164be90ec10 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_32573f79a7611dc158d0a46fdfc680f5 = $(`<div id="html_32573f79a7611dc158d0a46fdfc680f5" style="width: 100.0%; height: 100.0%;">                     <b>Manizales</b><br>                     Región: Región Centro Occidente<br>                     Instituciones en región: 7<br>                     Programas en región: 11<br>                     Estudiantes totales: 10,208                     </div>`)[0];
+                popup_75a863a2b6a09724626c5164be90ec10.setContent(html_32573f79a7611dc158d0a46fdfc680f5);
+            
+        
+
+        circle_marker_9a9ffd32b2719936d7031f3a320e9b5d.bindPopup(popup_75a863a2b6a09724626c5164be90ec10)
+        ;
+
+        
+    
+    
+            var circle_marker_e91bd87f78fcbb3aab9ce8cd0f58b56b = L.circleMarker(
+                [4.1489, -74.8836],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498DB", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_f864b501ae491b48638c1785c0c2a286 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1cde78710bbce7ad67621ae55bf88181 = $(`<div id="html_1cde78710bbce7ad67621ae55bf88181" style="width: 100.0%; height: 100.0%;">                     <b>Espinal</b><br>                     Región: Región Centro Occidente<br>                     Instituciones en región: 7<br>                     Programas en región: 11<br>                     Estudiantes totales: 10,208                     </div>`)[0];
+                popup_f864b501ae491b48638c1785c0c2a286.setContent(html_1cde78710bbce7ad67621ae55bf88181);
+            
+        
+
+        circle_marker_e91bd87f78fcbb3aab9ce8cd0f58b56b.bindPopup(popup_f864b501ae491b48638c1785c0c2a286)
+        ;
+
+        
+    
+    
+            var circle_marker_65f73945edcbc43a5a9a5d74f7e388fb = L.circleMarker(
+                [4.5339, -75.6811],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498DB", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_1f5971cd7f59187d019a39993ed1d4d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2afed2fb43ee1983db8c03ea82855561 = $(`<div id="html_2afed2fb43ee1983db8c03ea82855561" style="width: 100.0%; height: 100.0%;">                     <b>Armenia</b><br>                     Región: Región Centro Occidente<br>                     Instituciones en región: 7<br>                     Programas en región: 11<br>                     Estudiantes totales: 10,208                     </div>`)[0];
+                popup_1f5971cd7f59187d019a39993ed1d4d6.setContent(html_2afed2fb43ee1983db8c03ea82855561);
+            
+        
+
+        circle_marker_65f73945edcbc43a5a9a5d74f7e388fb.bindPopup(popup_1f5971cd7f59187d019a39993ed1d4d6)
+        ;
+
+        
+    
+    
+            var circle_marker_4340e132fa8b262af2cc06608874a096 = L.circleMarker(
+                [6.2442, -75.5812],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498DB", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_60e6eae255c00d77a153f1ce702a7a13 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1699246baac69e3e533a97e3b7a61993 = $(`<div id="html_1699246baac69e3e533a97e3b7a61993" style="width: 100.0%; height: 100.0%;">                     <b>Medellín</b><br>                     Región: Región Centro Occidente<br>                     Instituciones en región: 7<br>                     Programas en región: 11<br>                     Estudiantes totales: 10,208                     </div>`)[0];
+                popup_60e6eae255c00d77a153f1ce702a7a13.setContent(html_1699246baac69e3e533a97e3b7a61993);
+            
+        
+
+        circle_marker_4340e132fa8b262af2cc06608874a096.bindPopup(popup_60e6eae255c00d77a153f1ce702a7a13)
+        ;
+
+        
+    
+    
+            var circle_marker_2b6b1b1a6e1f8f486c55e2b0613a2137 = L.circleMarker(
+                [2.9273, -75.2819],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498DB", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_b7d5baddf5e394599cecf2092c8a27c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fde678962278b55c6dfa4fb8e4426b1f = $(`<div id="html_fde678962278b55c6dfa4fb8e4426b1f" style="width: 100.0%; height: 100.0%;">                     <b>Neiva</b><br>                     Región: Región Centro Occidente<br>                     Instituciones en región: 7<br>                     Programas en región: 11<br>                     Estudiantes totales: 10,208                     </div>`)[0];
+                popup_b7d5baddf5e394599cecf2092c8a27c1.setContent(html_fde678962278b55c6dfa4fb8e4426b1f);
+            
+        
+
+        circle_marker_2b6b1b1a6e1f8f486c55e2b0613a2137.bindPopup(popup_b7d5baddf5e394599cecf2092c8a27c1)
+        ;
+
+        
+    
+    
+            var circle_marker_dc02ee79d7140db894813fb31e29fe00 = L.circleMarker(
+                [4.8386, -75.6736],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498DB", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_6a610b6eecf64f6971019b9a681995f7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5edc5412fb9c35fa95ee8b1edba3e6a9 = $(`<div id="html_5edc5412fb9c35fa95ee8b1edba3e6a9" style="width: 100.0%; height: 100.0%;">                     <b>Dosquebradas</b><br>                     Región: Región Centro Occidente<br>                     Instituciones en región: 7<br>                     Programas en región: 11<br>                     Estudiantes totales: 10,208                     </div>`)[0];
+                popup_6a610b6eecf64f6971019b9a681995f7.setContent(html_5edc5412fb9c35fa95ee8b1edba3e6a9);
+            
+        
+
+        circle_marker_dc02ee79d7140db894813fb31e29fe00.bindPopup(popup_6a610b6eecf64f6971019b9a681995f7)
+        ;
+
+        
+    
+    
+            var circle_marker_eb27139b123650c935e0106bca75effe = L.circleMarker(
+                [4.4389, -75.2322],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498DB", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_58f53d202f1ef2b81aaa4f866e17a921 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ffb6b6471af1cef52fd5073b803f2f05 = $(`<div id="html_ffb6b6471af1cef52fd5073b803f2f05" style="width: 100.0%; height: 100.0%;">                     <b>Ibagué</b><br>                     Región: Región Centro Occidente<br>                     Instituciones en región: 7<br>                     Programas en región: 11<br>                     Estudiantes totales: 10,208                     </div>`)[0];
+                popup_58f53d202f1ef2b81aaa4f866e17a921.setContent(html_ffb6b6471af1cef52fd5073b803f2f05);
+            
+        
+
+        circle_marker_eb27139b123650c935e0106bca75effe.bindPopup(popup_58f53d202f1ef2b81aaa4f866e17a921)
+        ;
+
+        
+    
+    
+            var circle_marker_5d7d4e41d8d0ceb148644d23af578258 = L.circleMarker(
+                [5.7081, -72.9342],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_9bbee498946445c2ac1ef97e05dabee6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_06dffa06a632c02ae7acc5f5726cf003 = $(`<div id="html_06dffa06a632c02ae7acc5f5726cf003" style="width: 100.0%; height: 100.0%;">                     <b>Sogamoso</b><br>                     Región: Región Centro Oriente<br>                     Instituciones en región: 3<br>                     Programas en región: 5<br>                     Estudiantes totales: 3,032                     </div>`)[0];
+                popup_9bbee498946445c2ac1ef97e05dabee6.setContent(html_06dffa06a632c02ae7acc5f5726cf003);
+            
+        
+
+        circle_marker_5d7d4e41d8d0ceb148644d23af578258.bindPopup(popup_9bbee498946445c2ac1ef97e05dabee6)
+        ;
+
+        
+    
+    
+            var circle_marker_ebc5e4f0e786958f253a803c6d0f343f = L.circleMarker(
+                [7.1193, -73.1227],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_9a5e2ae8e673ab8dd2f077b4623d6e04 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_af26395f78d6ade571c4e4ebaa68328b = $(`<div id="html_af26395f78d6ade571c4e4ebaa68328b" style="width: 100.0%; height: 100.0%;">                     <b>Bucaramanga</b><br>                     Región: Región Centro Oriente<br>                     Instituciones en región: 3<br>                     Programas en región: 5<br>                     Estudiantes totales: 3,032                     </div>`)[0];
+                popup_9a5e2ae8e673ab8dd2f077b4623d6e04.setContent(html_af26395f78d6ade571c4e4ebaa68328b);
+            
+        
+
+        circle_marker_ebc5e4f0e786958f253a803c6d0f343f.bindPopup(popup_9a5e2ae8e673ab8dd2f077b4623d6e04)
+        ;
+
+        
+    
+    
+            var circle_marker_d687d3664a921fed01ea0dbaac3a60ba = L.circleMarker(
+                [4.8144, -74.3547],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_decc7f50cef2aa8738db1bec5999bac0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bd2d89d72d67ab275a06fb8b5225e2e1 = $(`<div id="html_bd2d89d72d67ab275a06fb8b5225e2e1" style="width: 100.0%; height: 100.0%;">                     <b>Facatativá</b><br>                     Región: Región Centro Oriente<br>                     Instituciones en región: 3<br>                     Programas en región: 5<br>                     Estudiantes totales: 3,032                     </div>`)[0];
+                popup_decc7f50cef2aa8738db1bec5999bac0.setContent(html_bd2d89d72d67ab275a06fb8b5225e2e1);
+            
+        
+
+        circle_marker_d687d3664a921fed01ea0dbaac3a60ba.bindPopup(popup_decc7f50cef2aa8738db1bec5999bac0)
+        ;
+
+        
+    
+    
+            var circle_marker_5309b3e1312a4aca36429c815fdc5ec2 = L.circleMarker(
+                [7.0669, -73.1692],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_19631c53837bb49ba1ab654f3c2fd771 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_afe02ddc4ea74ab6b0b516805202121a = $(`<div id="html_afe02ddc4ea74ab6b0b516805202121a" style="width: 100.0%; height: 100.0%;">                     <b>Girón</b><br>                     Región: Región Centro Oriente<br>                     Instituciones en región: 3<br>                     Programas en región: 5<br>                     Estudiantes totales: 3,032                     </div>`)[0];
+                popup_19631c53837bb49ba1ab654f3c2fd771.setContent(html_afe02ddc4ea74ab6b0b516805202121a);
+            
+        
+
+        circle_marker_5309b3e1312a4aca36429c815fdc5ec2.bindPopup(popup_19631c53837bb49ba1ab654f3c2fd771)
+        ;
+
+        
+    
+    
+            var circle_marker_9c63080415721b9f5e390acbff1ae3df = L.circleMarker(
+                [7.8939, -72.5078],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_a8b745b27b98f3a9cb9e469de59cb208 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_802659e13f4ed2a9eafe800c147f6037 = $(`<div id="html_802659e13f4ed2a9eafe800c147f6037" style="width: 100.0%; height: 100.0%;">                     <b>San José de Cúcuta</b><br>                     Región: Región Centro Oriente<br>                     Instituciones en región: 3<br>                     Programas en región: 5<br>                     Estudiantes totales: 3,032                     </div>`)[0];
+                popup_a8b745b27b98f3a9cb9e469de59cb208.setContent(html_802659e13f4ed2a9eafe800c147f6037);
+            
+        
+
+        circle_marker_9c63080415721b9f5e390acbff1ae3df.bindPopup(popup_a8b745b27b98f3a9cb9e469de59cb208)
+        ;
+
+        
+    
+    
+            var circle_marker_8f7acb533eece870d84d77a16ffe27bb = L.circleMarker(
+                [10.9685, -74.7813],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9B59B6", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_78b7dc8098f6e18553e4d87a9bd5f3fd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_08d38a6f8f2391a6e3f1f60a5f93fa1d = $(`<div id="html_08d38a6f8f2391a6e3f1f60a5f93fa1d" style="width: 100.0%; height: 100.0%;">                     <b>Barranquilla</b><br>                     Región: Región Norte<br>                     Instituciones en región: 3<br>                     Programas en región: 5<br>                     Estudiantes totales: 4,977                     </div>`)[0];
+                popup_78b7dc8098f6e18553e4d87a9bd5f3fd.setContent(html_08d38a6f8f2391a6e3f1f60a5f93fa1d);
+            
+        
+
+        circle_marker_8f7acb533eece870d84d77a16ffe27bb.bindPopup(popup_78b7dc8098f6e18553e4d87a9bd5f3fd)
+        ;
+
+        
+    
+    
+            var circle_marker_e04deb16c6071696543689f98dbdfbf7 = L.circleMarker(
+                [10.3997, -75.5144],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9B59B6", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_ed0edcce96f2cced4b6a14b8f56cfb5b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c65aac649d4a37a448de366854b767d = $(`<div id="html_4c65aac649d4a37a448de366854b767d" style="width: 100.0%; height: 100.0%;">                     <b>Cartagena de Indias</b><br>                     Región: Región Norte<br>                     Instituciones en región: 3<br>                     Programas en región: 5<br>                     Estudiantes totales: 4,977                     </div>`)[0];
+                popup_ed0edcce96f2cced4b6a14b8f56cfb5b.setContent(html_4c65aac649d4a37a448de366854b767d);
+            
+        
+
+        circle_marker_e04deb16c6071696543689f98dbdfbf7.bindPopup(popup_ed0edcce96f2cced4b6a14b8f56cfb5b)
+        ;
+
+        
+    
+    
+            var circle_marker_cb38bd2a1344a8a3e7f07744e5b67c90 = L.circleMarker(
+                [11.5444, -72.9072],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9B59B6", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_9946a9100a776bb96fd5dfb39ef89631 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b3bc77b32db7af219314815d796e7ae = $(`<div id="html_3b3bc77b32db7af219314815d796e7ae" style="width: 100.0%; height: 100.0%;">                     <b>Riohacha</b><br>                     Región: Región Norte<br>                     Instituciones en región: 3<br>                     Programas en región: 5<br>                     Estudiantes totales: 4,977                     </div>`)[0];
+                popup_9946a9100a776bb96fd5dfb39ef89631.setContent(html_3b3bc77b32db7af219314815d796e7ae);
+            
+        
+
+        circle_marker_cb38bd2a1344a8a3e7f07744e5b67c90.bindPopup(popup_9946a9100a776bb96fd5dfb39ef89631)
+        ;
+
+        
+    
+    
+            var circle_marker_df7a2b6a35e7726d7d508725ffeae487 = L.circleMarker(
+                [3.4516, -76.532],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_f0d17cce698329af90b69b4d43f8dd1b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb58ac2f1efad0140a35e614fefac180 = $(`<div id="html_bb58ac2f1efad0140a35e614fefac180" style="width: 100.0%; height: 100.0%;">                     <b>Santiago de Cali</b><br>                     Región: Región Occidente<br>                     Instituciones en región: 5<br>                     Programas en región: 12<br>                     Estudiantes totales: 3,578                     </div>`)[0];
+                popup_f0d17cce698329af90b69b4d43f8dd1b.setContent(html_bb58ac2f1efad0140a35e614fefac180);
+            
+        
+
+        circle_marker_df7a2b6a35e7726d7d508725ffeae487.bindPopup(popup_f0d17cce698329af90b69b4d43f8dd1b)
+        ;
+
+        
+    
+    
+            var circle_marker_28f67432c263c449795756eea09f891e = L.circleMarker(
+                [1.2136, -77.2811],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_28b2d3b9389b2a14515eec0f54ac4cdd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e234594b6a3465db203ff22271e1dde = $(`<div id="html_7e234594b6a3465db203ff22271e1dde" style="width: 100.0%; height: 100.0%;">                     <b>Pasto</b><br>                     Región: Región Occidente<br>                     Instituciones en región: 5<br>                     Programas en región: 12<br>                     Estudiantes totales: 3,578                     </div>`)[0];
+                popup_28b2d3b9389b2a14515eec0f54ac4cdd.setContent(html_7e234594b6a3465db203ff22271e1dde);
+            
+        
+
+        circle_marker_28f67432c263c449795756eea09f891e.bindPopup(popup_28b2d3b9389b2a14515eec0f54ac4cdd)
+        ;
+
+        
+    
+    
+            var circle_marker_35d759537e1c36642583582b976f8a69 = L.circleMarker(
+                [3.5394, -76.3036],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_f7f9b74e8c33aa37588ba81b4d12caf1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a049f1bbf4867d2713ee4ae1a1dcdee8 = $(`<div id="html_a049f1bbf4867d2713ee4ae1a1dcdee8" style="width: 100.0%; height: 100.0%;">                     <b>Palmira</b><br>                     Región: Región Occidente<br>                     Instituciones en región: 5<br>                     Programas en región: 12<br>                     Estudiantes totales: 3,578                     </div>`)[0];
+                popup_f7f9b74e8c33aa37588ba81b4d12caf1.setContent(html_a049f1bbf4867d2713ee4ae1a1dcdee8);
+            
+        
+
+        circle_marker_35d759537e1c36642583582b976f8a69.bindPopup(popup_f7f9b74e8c33aa37588ba81b4d12caf1)
+        ;
+
+        
+    
+    
+            var circle_marker_a7dd82496bc47ff0b3b0f87b7c5240d8 = L.circleMarker(
+                [4.7467, -75.9111],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_c1812ba29a0cb657478eb27b6d6b0068 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_45d27f1af5297fa622b971a048e60d06 = $(`<div id="html_45d27f1af5297fa622b971a048e60d06" style="width: 100.0%; height: 100.0%;">                     <b>Cartago</b><br>                     Región: Región Occidente<br>                     Instituciones en región: 5<br>                     Programas en región: 12<br>                     Estudiantes totales: 3,578                     </div>`)[0];
+                popup_c1812ba29a0cb657478eb27b6d6b0068.setContent(html_45d27f1af5297fa622b971a048e60d06);
+            
+        
+
+        circle_marker_a7dd82496bc47ff0b3b0f87b7c5240d8.bindPopup(popup_c1812ba29a0cb657478eb27b6d6b0068)
+        ;
+
+        
+    
+    
+            var circle_marker_fc3269adaa58dc62ddeb828b0d2baba8 = L.circleMarker(
+                [3.8801, -77.0313],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_3e295d2c7bb2da595eeb89ad985ba2b8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d53b71d3e90acca815ba0d96c7bd967 = $(`<div id="html_0d53b71d3e90acca815ba0d96c7bd967" style="width: 100.0%; height: 100.0%;">                     <b>Buenaventura</b><br>                     Región: Región Occidente<br>                     Instituciones en región: 5<br>                     Programas en región: 12<br>                     Estudiantes totales: 3,578                     </div>`)[0];
+                popup_3e295d2c7bb2da595eeb89ad985ba2b8.setContent(html_0d53b71d3e90acca815ba0d96c7bd967);
+            
+        
+
+        circle_marker_fc3269adaa58dc62ddeb828b0d2baba8.bindPopup(popup_3e295d2c7bb2da595eeb89ad985ba2b8)
+        ;
+
+        
+    
+    
+            var circle_marker_a8edda0ba01ab92698cbb6450cdfe756 = L.circleMarker(
+                [2.4448, -76.6147],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_d7245b4f522294f9fedec2e984ed513c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_53a3acd0caf25956da2a5b4dcfbf2caa = $(`<div id="html_53a3acd0caf25956da2a5b4dcfbf2caa" style="width: 100.0%; height: 100.0%;">                     <b>Popayán</b><br>                     Región: Región Occidente<br>                     Instituciones en región: 5<br>                     Programas en región: 12<br>                     Estudiantes totales: 3,578                     </div>`)[0];
+                popup_d7245b4f522294f9fedec2e984ed513c.setContent(html_53a3acd0caf25956da2a5b4dcfbf2caa);
+            
+        
+
+        circle_marker_a8edda0ba01ab92698cbb6450cdfe756.bindPopup(popup_d7245b4f522294f9fedec2e984ed513c)
+        ;
+
+        
+    
+    
+            var circle_marker_76d5c873510860e229cbcac5b0a7b80c = L.circleMarker(
+                [4.0845, -76.1955],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_dec5ed664d02c3940b9cba6ffd6200dd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ef9f7af6e6d4dc4ea471d3940cf6f45 = $(`<div id="html_5ef9f7af6e6d4dc4ea471d3940cf6f45" style="width: 100.0%; height: 100.0%;">                     <b>Tuluá</b><br>                     Región: Región Occidente<br>                     Instituciones en región: 5<br>                     Programas en región: 12<br>                     Estudiantes totales: 3,578                     </div>`)[0];
+                popup_dec5ed664d02c3940b9cba6ffd6200dd.setContent(html_5ef9f7af6e6d4dc4ea471d3940cf6f45);
+            
+        
+
+        circle_marker_76d5c873510860e229cbcac5b0a7b80c.bindPopup(popup_dec5ed664d02c3940b9cba6ffd6200dd)
+        ;
+
+        
+    
+    
+            var circle_marker_a44e5a8451528ca9ad4a2228b4587e0a = L.circleMarker(
+                [4.3989, -76.0747],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_4803b6f47b02eed3bca12c8007c34c23 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_addaac1972b37e5f6158234107329930 = $(`<div id="html_addaac1972b37e5f6158234107329930" style="width: 100.0%; height: 100.0%;">                     <b>Zarzal</b><br>                     Región: Región Occidente<br>                     Instituciones en región: 5<br>                     Programas en región: 12<br>                     Estudiantes totales: 3,578                     </div>`)[0];
+                popup_4803b6f47b02eed3bca12c8007c34c23.setContent(html_addaac1972b37e5f6158234107329930);
+            
+        
+
+        circle_marker_a44e5a8451528ca9ad4a2228b4587e0a.bindPopup(popup_4803b6f47b02eed3bca12c8007c34c23)
+        ;
+
+        
+    
+    
+            var circle_marker_da156fb15ff6efec379aff2ee2d09f4a = L.circleMarker(
+                [4.142, -73.6266],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E67E22", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 2}
+            ).addTo(map_4fda13925415a74326b3a2853c4bdb99);
+        
+    
+        var popup_489144e7f4869076f459199e01ba9f35 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_356da8912b057c949277649c5c7467e0 = $(`<div id="html_356da8912b057c949277649c5c7467e0" style="width: 100.0%; height: 100.0%;">                     <b>Villavicencio</b><br>                     Región: Región Sur Oriente<br>                     Instituciones en región: 1<br>                     Programas en región: 2<br>                     Estudiantes totales: 1,191                     </div>`)[0];
+                popup_489144e7f4869076f459199e01ba9f35.setContent(html_356da8912b057c949277649c5c7467e0);
+            
+        
+
+        circle_marker_da156fb15ff6efec379aff2ee2d09f4a.bindPopup(popup_489144e7f4869076f459199e01ba9f35)
+        ;
+
+        
+    
+</script>
+</html>
