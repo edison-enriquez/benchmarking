@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+
+# Virtual environments
+venv/
+venv_new/
+new_venv/
+ENV/
+env/
+.env
+.env.*
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Excel/CSV outputs
+*.xlsx
+*.csv
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Resultados
+resultados/
+
+# Archivos temporales
+*.tmp
+*.bak
+
+# Otros archivos generados
+files/csv_convertidos/

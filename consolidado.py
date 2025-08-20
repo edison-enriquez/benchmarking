@@ -72,9 +72,15 @@ def load_and_prepare_programas(file_path, log_file):
         df_programas = pd.read_excel(file_path, sheet_name='Programas', engine='openpyxl')
         df_programas.columns = [normalize_text(col) for col in df_programas.columns]
         
-        mapeo = {'CODIGO_SNIES_DEL_PROGRAMA': 'CODIGO_SNIES_PROGRAMA', 'NOMBRE_INSTITUCION': 'INSTITUCION_EDUCACION_SUPERIOR'}
+        # Mapeo completo de columnas del archivo de programas
+        mapeo = {
+            'CODIGO_SNIES_DEL_PROGRAMA': 'CODIGO_SNIES_PROGRAMA', 
+            'NOMBRE_INSTITUCION': 'INSTITUCION_EDUCACION_SUPERIOR',
+            'NOMBRE_INSTITUCIÓN': 'INSTITUCION_EDUCACION_SUPERIOR'
+        }
         for old, new in mapeo.items():
-            if old in df_programas.columns and new not in df_programas.columns: df_programas.rename(columns={old: new}, inplace=True)
+            if old in df_programas.columns and new not in df_programas.columns: 
+                df_programas.rename(columns={old: new}, inplace=True)
         
         if 'CODIGO_SNIES_PROGRAMA' not in df_programas.columns or 'REGION' not in df_programas.columns:
             log_message(log_file, "ERROR", "Columnas 'CODIGO_SNIES_PROGRAMA' y 'REGION' no encontradas en programas.")
@@ -106,9 +112,23 @@ def process_indicator_data(indicator_csv_path, log_file):
     """Lee un archivo CSV de indicador y devuelve datos agrupados."""
     try:
         log_message(log_file, "DEBUG", f"Leyendo indicador: {indicator_csv_path}")
-        # Intentar leer CODIGO_SNIES_PROGRAMA como string directamente
-        df_indicator = pd.read_csv(indicator_csv_path, dtype={'CODIGO_SNIES_PROGRAMA': str}, low_memory=False)
+        # Intentar leer con las posibles columnas de código SNIES como string
+        try:
+            df_indicator = pd.read_csv(indicator_csv_path, dtype={'CODIGO_SNIES_PROGRAMA': str}, low_memory=False)
+        except ValueError:
+            # Si falla, intentar con el nombre alternativo
+            try:
+                df_indicator = pd.read_csv(indicator_csv_path, dtype={'CODIGO_SNIES_DEL_PROGRAMA': str}, low_memory=False)
+            except ValueError:
+                # Si ambos fallan, leer sin especificar tipos
+                df_indicator = pd.read_csv(indicator_csv_path, low_memory=False)
         df_indicator.columns = [normalize_text(col) for col in df_indicator.columns]
+
+        # Verificar y mapear columnas de código SNIES si es necesario
+        if 'CODIGO_SNIES_PROGRAMA' not in df_indicator.columns:
+            if 'CODIGO_SNIES_DEL_PROGRAMA' in df_indicator.columns:
+                df_indicator.rename(columns={'CODIGO_SNIES_DEL_PROGRAMA': 'CODIGO_SNIES_PROGRAMA'}, inplace=True)
+                log_message(log_file, "DEBUG", f"Renombrada columna CODIGO_SNIES_DEL_PROGRAMA a CODIGO_SNIES_PROGRAMA")
 
         if 'CODIGO_SNIES_PROGRAMA' not in df_indicator.columns or 'ANO' not in df_indicator.columns:
             log_message(log_file, "WARNING", f"Archivo {indicator_csv_path} omite 'CODIGO_SNIES_PROGRAMA' o 'ANO'.")
@@ -169,9 +189,14 @@ def process_indicator_data(indicator_csv_path, log_file):
                         ano_int = int(row['ANO']) # Ahora es seguro convertir a int
 
                         p_val = normalize_text(str(row[col_semestre]))
-                        p_num = re.search(r'\d+', p_val)
-                        # Usar el número encontrado o el primer caracter si no hay número
-                        semestre_part = p_num.group(0) if p_num else p_val[:1]
+                        # Primero intentar convertir a float y luego a int para manejar valores como "1.0"
+                        try:
+                            semestre_num = int(float(str(row[col_semestre])))
+                            semestre_part = str(semestre_num)
+                        except (ValueError, TypeError):
+                            # Si falla, usar la lógica anterior
+                            p_num = re.search(r'\d+', p_val)
+                            semestre_part = p_num.group(0) if p_num else p_val[:1]
                         # Validar que semestre_part sea '1' o '2' si es posible, o mantenerlo como está
                         if semestre_part not in ['1', '2']:
                              log_message(log_file, "DEBUG", f"Valor de semestre no estándar '{row[col_semestre]}' (normalizado: '{p_val}'). Usando: '{semestre_part}'")
