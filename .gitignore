@@ -39,7 +39,7 @@ env/
 Thumbs.db
 
 # Resultados
-resultados/
+#resultados/
 
 # Archivos temporales
 *.tmp
