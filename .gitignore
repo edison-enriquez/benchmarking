@@ -27,23 +27,39 @@ env/
 # VS Code
 .vscode/
 
-# Logs
+# Logs - Actualizado para nueva estructura
 *.log
+output/logs/*.log
 
-# Excel/CSV outputs
-*.xlsx
-*.csv
+# Excel/CSV outputs - Mantenemos algunos archivos esenciales
+# *.xlsx
+# *.csv
 
 # System files
 .DS_Store
 Thumbs.db
 
-# Resultados
-#resultados/
+# Resultados - Ahora en output/
+# output/
 
 # Archivos temporales
 *.tmp
 *.bak
+*.cache
+
+# Test coverage
+htmlcov/
+.coverage
+.pytest_cache/
+
+# IDE files
+.idea/
+*.swp
+*.swo
+
+# Documentación generada
+docs/_build/
 
 # Otros archivos generados
 files/csv_convertidos/
+~$*
